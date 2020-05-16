@@ -638,15 +638,18 @@ h1 {
     display: flex;
     flex-direction: column;
     height: 100vmin;
-    text-align: center; }
-    .ba-bhromaon__inner__subtittle {
-      font-size: 22px;
-      line-height: 26px;
-      letter-spacing: 0.24em;
-      margin-bottom: 50px; }
+    text-align: center;
+    justify-content: center;
+    align-items: center; }
+  .ba-bhromaon__subtittle {
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.24em;
+    margin-bottom: 50px; }
   .ba-bhromaon__search {
     max-width: 651px;
-    position: relative; }
+    position: relative;
+    margin-bottom: 115px; }
     .ba-bhromaon__search [type="search"] {
       width: 100%;
       box-sizing: border-box;
@@ -803,7 +806,7 @@ h1 {
   padding-top: 120px; }
   .ba-footer__title {
     text-transform: uppercase;
-    letter-spacing: 0.0em;
+    letter-spacing: 0em;
     padding: 0; }
 
 /*# sourceMappingURL=style.css.map */

@@ -56,19 +56,21 @@ h1 {
   &__inner {
     display: flex;
     flex-direction: column;
-
     height: 100vmin;
     text-align: center;
-    &__subtittle {
-      font-size: 22px;
-      line-height: 26px;
-      letter-spacing: 0.24em;
-      margin-bottom: 50px;
-    }
+    justify-content: center;
+    align-items: center;
+  }
+  &__subtittle {
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.24em;
+    margin-bottom: 50px;
   }
   &__search {
     max-width: 651px;
     position: relative;
+    margin-bottom: 115px;
 
     [type="search"] {
       width: 100%;
@@ -253,36 +255,35 @@ h1 {
     text-align: center;
   }
   &__tittle {
-	 font: 400 36px/26px "Aleo Regular", arial;
-	 margin-bottom: 100px;
+    font: 400 36px/26px "Aleo Regular", arial;
+    margin-bottom: 100px;
   }
-  &__maincontent{
-	width: 100%;
-	display: flex;
+  &__maincontent {
+    width: 100%;
+    display: flex;
   }
-  &__imgwrapper{
-	
+  &__imgwrapper {
   }
-  &__content{
-	max-width: 670px;
-	padding: 45px 60px;
-	text-align: left;
-	margin-bottom: 125px;
+  &__content {
+    max-width: 670px;
+    padding: 45px 60px;
+    text-align: left;
+    margin-bottom: 125px;
   }
-  &__subtittle{
-	  text-transform: uppercase;
-	  font-size: 20px;
-	  line-height: 26px;
-	  margin-bottom: 40px ;
+  &__subtittle {
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 40px;
   }
 }
-.ba-footer{
-	background: #232323;
-	text-align: center;
-	padding-top: 120px;
-	&__title{
-		text-transform: uppercase;
-		letter-spacing: 0.0em;
-		padding: 0;
-	}
+.ba-footer {
+  background: #232323;
+  text-align: center;
+  padding-top: 120px;
+  &__title {
+    text-transform: uppercase;
+    letter-spacing: 0em;
+    padding: 0;
+  }
 }

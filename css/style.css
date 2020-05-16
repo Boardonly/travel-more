@@ -666,8 +666,7 @@ h1 {
         right: 20px; }
 
 .ba-header {
-  background: #5474fd;
-  display: flex; }
+  background: #5474fd; }
   .ba-header__inner {
     padding-left: 20px;
     padding-right: 20px;
@@ -797,5 +796,14 @@ h1 {
     font-size: 20px;
     line-height: 26px;
     margin-bottom: 40px; }
+
+.ba-footer {
+  background: #232323;
+  text-align: center;
+  padding-top: 120px; }
+  .ba-footer__title {
+    text-transform: uppercase;
+    letter-spacing: 0.0em;
+    padding: 0; }
 
 /*# sourceMappingURL=style.css.map */

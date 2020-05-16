@@ -97,7 +97,6 @@ h1 {
 
 .ba-header {
   background: #5474fd;
-  display: flex;
   &__inner {
     padding-left: 20px;
     padding-right: 20px;
@@ -276,4 +275,14 @@ h1 {
 	  line-height: 26px;
 	  margin-bottom: 40px ;
   }
+}
+.ba-footer{
+	background: #232323;
+	text-align: center;
+	padding-top: 120px;
+	&__title{
+		text-transform: uppercase;
+		letter-spacing: 0.0em;
+		padding: 0;
+	}
 }

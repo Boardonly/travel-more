@@ -4,6 +4,8 @@
  * 2. Prevent iOS and IE text size adjust after device orientation change,
  *    without disabling user zoom.
  */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&display=swap");
+@import url(http://allfont.ru/allfont.css?fonts=aleo-regular);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -585,10 +587,215 @@ textarea,
 select {
   transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in; }
 
+body {
+  font: 400 16px/1.625 "Josefin Sans", sans-serif;
+  color: #fff; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 17px; }
+
+p {
+  margin: 0; }
+
+a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0; }
+
+h1 {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 26px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em; }
+
 /* Layout */
 .ba-container {
   padding-left: 20px;
   padding-right: 20px;
-  max-width: 1200px; }
+  max-width: 1150px; }
+
+.ba-button {
+  font: 400 16px/26px "Aleo Regular", arial;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: #5474fd;
+  padding: 16px 35px;
+  border: 1px solid #5474fd; }
+  .ba-button:hover {
+    color: #5474fd;
+    background: #fff; }
+
+.ba-bhromaon {
+  background-image: url(../img/bhromaon-bg.png);
+  background-size: cover; }
+  .ba-bhromaon__inner {
+    display: flex;
+    flex-direction: column;
+    height: 100vmin;
+    text-align: center; }
+    .ba-bhromaon__inner__subtittle {
+      font-size: 22px;
+      line-height: 26px;
+      letter-spacing: 0.24em;
+      margin-bottom: 50px; }
+  .ba-bhromaon__search {
+    max-width: 651px;
+    position: relative; }
+    .ba-bhromaon__search [type="search"] {
+      width: 100%;
+      box-sizing: border-box;
+      background: #fff;
+      padding: 20px 270px 20px 120px; }
+    .ba-bhromaon__search button {
+      font: 400 14px/1 "Aleo Regular", arial;
+      position: absolute;
+      right: 4px;
+      top: 3px;
+      border: none;
+      padding: 20px 50px 20px 30px;
+      background: #5474fd; }
+      .ba-bhromaon__search button > svg {
+        position: absolute;
+        top: 15px;
+        right: 20px; }
+
+.ba-header {
+  background: #5474fd;
+  display: flex; }
+  .ba-header__inner {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 1150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase; }
+    .ba-header__inner__logo {
+      font-size: 24px; }
+    .ba-header__inner .ba-nav ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      flex-direction: row; }
+      .ba-header__inner .ba-nav ul li + li {
+        margin-left: 20px; }
+      .ba-header__inner .ba-nav ul li:hover {
+        transform: scale(1.1); }
+
+.ba-choose {
+  background-image: url(../img/choose-bg.png);
+  background-size: cover;
+  display: flex;
+  position: relative; }
+  .ba-choose__content {
+    margin-top: 200px;
+    width: 49%; }
+  .ba-choose__tittle {
+    font: 400 36px/26px "Aleo Regular", arial;
+    margin-bottom: 65px; }
+  .ba-choose p {
+    margin-bottom: 25px; }
+  .ba-choose__btn {
+    margin-top: 18px;
+    margin-bottom: 130px; }
+  .ba-choose .house {
+    position: absolute;
+    top: 17%;
+    right: 23%; }
+  .ba-choose .mountains {
+    position: absolute;
+    top: 50%;
+    right: 15%; }
+
+.ba-it-works {
+  background: #333333; }
+  .ba-it-works__inner {
+    background: url(../img/dotted-line.svg) 50% 26%;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    padding-top: 20px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around; }
+  .ba-it-works__item {
+    border-radius: 50%;
+    background-color: #333333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 80px 0;
+    padding: 20px; }
+    .ba-it-works__item svg {
+      margin-bottom: 33px; }
+    .ba-it-works__item p {
+      font: 400 36px/26px "Aleo Regular", arial; }
+
+.ba-spain {
+  display: flex;
+  flex-direction: column; }
+  .ba-spain__item {
+    width: 100%;
+    padding: 230px 0 100px; }
+  .ba-spain .ba-end {
+    justify-content: flex-end; }
+  .ba-spain__wrapper {
+    display: flex; }
+  .ba-spain__item:nth-child(odd) {
+    background-image: url(../img/spain-bg1.png);
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .ba-spain__item:nth-child(even) {
+    background-image: url(../img/spain-bg2.png);
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .ba-spain__content {
+    background: rgba(0, 0, 0, 0.3);
+    max-width: 540px;
+    padding: 46px 30px 0 30px; }
+    .ba-spain__content p {
+      letter-spacing: -0.065em;
+      margin-bottom: 41px; }
+    .ba-spain__content a {
+      padding: 16px 60px;
+      margin-bottom: 52px; }
+  .ba-spain__title, .ba-spain__subtitle {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 400; }
+  .ba-spain__title {
+    margin-bottom: 24px; }
+  .ba-spain__subtitle {
+    text-transform: uppercase;
+    letter-spacing: -0.042em; }
+
+.ba-testimonial {
+  background-image: url(../img/testimontial-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .ba-testimonial__inner {
+    padding-top: 120px;
+    text-align: center; }
+  .ba-testimonial__tittle {
+    font: 400 36px/26px "Aleo Regular", arial;
+    margin-bottom: 100px; }
+  .ba-testimonial__maincontent {
+    width: 100%;
+    display: flex; }
+  .ba-testimonial__content {
+    max-width: 670px;
+    padding: 45px 60px;
+    text-align: left;
+    margin-bottom: 125px; }
+  .ba-testimonial__subtittle {
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 40px; }
 
 /*# sourceMappingURL=style.css.map */

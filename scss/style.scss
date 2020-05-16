@@ -1,14 +1,279 @@
 @import "normalize";
 @import "layout";
 @import "elements";
+@import "fonts";
 
-body{
-	font: 400 16px/1.625 'Josefin Sans', sans-serif;
+body {
+  font: 400 16px/1.625 "Josefin Sans", sans-serif;
+  color: #fff;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 17px;
+}
+p {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+}
+h1 {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 26px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
 /* Layout */
-.ba-container{
-	padding-left: 20px;
-	padding-right: 20px;
-	max-width: 1150px;
+.ba-container {
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1150px;
+}
+.ba-button {
+  font: 400 16px/26px "Aleo Regular", arial;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: #5474fd;
+  padding: 16px 35px;
+  border: 1px solid #5474fd;
+
+  &:hover {
+    color: #5474fd;
+    background: #fff;
+  }
+}
+.ba-bhromaon {
+  background-image: url(../img/bhromaon-bg.png);
+  background-size: cover;
+  &__inner {
+    display: flex;
+    flex-direction: column;
+
+    height: 100vmin;
+    text-align: center;
+    &__subtittle {
+      font-size: 22px;
+      line-height: 26px;
+      letter-spacing: 0.24em;
+      margin-bottom: 50px;
+    }
+  }
+  &__search {
+    max-width: 651px;
+    position: relative;
+
+    [type="search"] {
+      width: 100%;
+      box-sizing: border-box;
+      background: #fff;
+      padding: 20px 270px 20px 120px;
+    }
+
+    button {
+      font: 400 14px/1 "Aleo Regular", arial;
+      position: absolute;
+      right: 4px;
+      top: 3px;
+      border: none;
+      padding: 20px 50px 20px 30px;
+      background: #5474fd;
+
+      > svg {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+      }
+    }
+  }
+}
+
+.ba-header {
+  background: #5474fd;
+  display: flex;
+  &__inner {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 1150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    &__logo {
+      font-size: 24px;
+    }
+    .ba-nav {
+      ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+
+        li + li {
+          margin-left: 20px;
+        }
+        li:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
+
+.ba-choose {
+  background-image: url(../img/choose-bg.png);
+  background-size: cover;
+  display: flex;
+  position: relative;
+
+  &__content {
+    margin-top: 200px;
+    width: 49%;
+  }
+  &__tittle {
+    font: 400 36px/26px "Aleo Regular", arial;
+    margin-bottom: 65px;
+  }
+  p {
+    margin-bottom: 25px;
+  }
+  &__btn {
+    margin-top: 18px;
+    margin-bottom: 130px;
+  }
+  .house {
+    position: absolute;
+    top: 17%;
+    right: 23%;
+  }
+  .mountains {
+    position: absolute;
+    top: 50%;
+    right: 15%;
+  }
+}
+
+.ba-it-works {
+  background: #333333;
+
+  &__inner {
+    background: url(../img/dotted-line.svg) 50% 26%;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    padding-top: 20px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+  }
+  &__item {
+    border-radius: 50%;
+    background-color: rgb(51, 51, 51);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 80px 0;
+    padding: 20px;
+
+    svg {
+      margin-bottom: 33px;
+    }
+    p {
+      font: 400 36px/26px "Aleo Regular", arial;
+    }
+  }
+}
+.ba-spain {
+  display: flex;
+  flex-direction: column;
+
+  &__item {
+    width: 100%;
+    padding: 230px 0 100px;
+    //  display: flex;
+  }
+  .ba-end {
+    justify-content: flex-end;
+  }
+  &__wrapper {
+    display: flex;
+  }
+  &__item:nth-child(odd) {
+    background-image: url(../img/spain-bg1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &__item:nth-child(even) {
+    background-image: url(../img/spain-bg2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__content {
+    background: rgba(#000, 0.3);
+    max-width: 540px;
+    padding: 46px 30px 0 30px;
+
+    p {
+      letter-spacing: -0.065em;
+      margin-bottom: 41px;
+    }
+    a {
+      padding: 16px 60px;
+      margin-bottom: 52px;
+    }
+  }
+  &__title,
+  &__subtitle {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 400;
+  }
+  &__title {
+    margin-bottom: 24px;
+  }
+  &__subtitle {
+    text-transform: uppercase;
+    letter-spacing: -0.042em;
+  }
+}
+
+.ba-testimonial {
+  background-image: url(../img/testimontial-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__inner {
+    padding-top: 120px;
+    text-align: center;
+  }
+  &__tittle {
+	 font: 400 36px/26px "Aleo Regular", arial;
+	 margin-bottom: 100px;
+  }
+  &__maincontent{
+	width: 100%;
+	display: flex;
+  }
+  &__imgwrapper{
+	
+  }
+  &__content{
+	max-width: 670px;
+	padding: 45px 60px;
+	text-align: left;
+	margin-bottom: 125px;
+  }
+  &__subtittle{
+	  text-transform: uppercase;
+	  font-size: 20px;
+	  line-height: 26px;
+	  margin-bottom: 40px ;
+  }
 }
